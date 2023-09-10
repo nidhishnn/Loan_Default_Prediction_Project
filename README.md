@@ -9,12 +9,12 @@ Property value was the best predictor of the actual approved loan amount. Furthe
 
 # Overall Recommendations
 Based on our experience working with this data, it is clear that creating a model around acceptances and denials is possible, but providing more training and testing data to this model could allow for better future results. Based on the previously provided figures, we can see our models learning general relationships between various covariates, such as credit score and payment to income ratio, to create a usable model for prediction, but some of the more specific covariates that could point to mortgage denials do not stand out within the sample, because of the limited number of denials available to train and test our models. <br>
-Assessment of our Models’ Performance
+### Assessment of our Models’ Performance
 Looking at the various RMSE and accuracy metrics we had for our models, we are satisfied with the results of our modeling efforts. There are clear, logical, explainable trends found within the dataset, that we can model in various ways. For example, there is a clear relationship between having a high debt to income ratio and being denied for a mortgage. This is a logical relationship, considering that lenders would consider individuals with a higher debt to income ratio to have a greater risk of default, and would therefore deny their mortgage applications at a higher rate than the average Travis County resident. <br>
-Critique of our Methodology
+### Critique of our Methodology
 In general, we placed a large emphasis on avoiding the overfitting problem with our finalized models. However, this is easier said than done, since the sheer fact of us hand-selecting a model based on test error is a factor in overfitting the trained models on our data selection. In other
 words, even though each individual model only sees the training data, our model selection algorithms (highest accuracy and lowest RMSE on the testing data) are highly linked with the testing data set, which could cause an overfitting effect on the final selected model. There are not a lot of ways we can avoid this. <br>
-Future Assessments
+### Future Assessments
 Seeing that there is a large trove of data available, it would be interesting to do a more complete analysis on mortgage acceptance/denial rates between different races and ethnicities in the United States. If we want to derive any sort of causal inference from our dataset, it is a good opportunity to use matching in our dataset, to match individuals that have similar application details (i.e. credit score, debt to income ratio, property value, etc) and see if there are statistically significant differences in the acceptance or denial of their applications. With this information, and a deeper analysis into the various balance aspects of the matching process, we could derive interesting insights on mortgage denial/acceptance rates across races and ethnicities. <br>
 
 Team: Nidhish Nerur, Sanath Govindarajan, Pavan Agrawal, Tanay Sethia
